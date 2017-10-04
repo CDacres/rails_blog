@@ -1,0 +1,10 @@
+<h1>My Blog</h1>
+<%= link_to "Home", posts_path %>
+
+<h4><%= @comment.name %></h4>
+<p><%= @comment.body %></p>
+<p>Posted at: <%= @comment.created_at %></p>
+
+<%= link_to "Edit Comment", edit_post_comment_path(@post, @comment) %> |
+<%= link_to "Delete Comment", post_comment_path(@post, @comment), method: :delete, data: { confirm: "Are you sure?" } %> |
+<%= link_to "Back to all Comments", post_comments_path(@post) %>

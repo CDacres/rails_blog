@@ -1,0 +1,11 @@
+<h1>My Blog</h1>
+<%= link_to "Home", posts_path %>
+<br><br>
+
+<%= link_to "Back to Post", post_path(@post) %>
+
+<h2>All Comments</h2>
+
+<%= link_to "New Comment", new_post_comment_path %>
+
+<%= render @post.comments %>
