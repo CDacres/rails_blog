@@ -1,9 +1,12 @@
-<h1>My Blog</h1>
-<%= link_to "Home", posts_path %>
+<div class="logo">
+	<h1>My Blog</h1>
+	<%= link_to "Home", posts_path %>
+</div>
 
 <h2><%= @post.title %></h2>
-<h4><%= @post.author %></h4>
+<h4>Written by: <%= @post.author %></h4>
 <p><%= @post.body %></p>
+<br>
 <img src="<%= @post.picture %>" width="500" height="auto">
 <br>
 <%= link_to "View Comments", post_comments_path(@post) %> |

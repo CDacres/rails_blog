@@ -1,3 +1,48 @@
 // Place all the styles related to the post controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    background-image: url("blue-blog-background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
+}
+
+p{
+	width: 550px;
+    margin: 0 auto;
+}
+
+h1 {
+	font-size: 45px;
+	color: #007fa5;
+	text-shadow: 2px 2px 4px #b8fbff;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #398999;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 25px;
+}
+
+form {
+	width: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
