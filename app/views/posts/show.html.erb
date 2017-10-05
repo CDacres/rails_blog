@@ -11,6 +11,8 @@
 <br><br>
 <p><strong>Comments: </strong></p>
 <br>
+<%= link_to "Add a New Comment", "#{@post.id}/comments/new" %>
+<br><br>
 <%= render @post.comments %>
 <%= link_to "Edit Post", edit_post_path(@post) %> |
 <%= link_to "Delete Post", @post, method: :delete, data: { confirm: "Are you sure?" } %>
